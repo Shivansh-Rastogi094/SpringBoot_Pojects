@@ -51,7 +51,7 @@ import lombok.RequiredArgsConstructor;
 	        return ResponseEntity.ok(department);
 	    }
 	    
-	    @GetMapping("/{departmentId}/rest-template")
+	    @GetMapping("/{departmentId}/feign")
 	    public ResponseEntity<DepartmentWithEmployeesResponse> getEmployeesWithRest(
 	            @PathVariable long departmentId) {
 
